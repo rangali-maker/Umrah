@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f5132">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Umrah Duas">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Umrah Duas</title>
+<style>
+:root{--green:#0f5132;--gold:#c8a45d;--cream:#faf8f2;--ink:#18221d;--muted:#68736d;--card:#fff;--line:#e7e2d7}
+*{box-sizing:border-box} body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}
+header{background:linear-gradient(145deg,#0b4229,#146b43);color:#fff;padding:52px 20px 28px;border-radius:0 0 28px 28px}
+h1{margin:0;font-size:34px;letter-spacing:-1px} header p{margin:7px 0 0;opacity:.82}
+.wrap{max-width:720px;margin:auto;padding:18px 16px 40px}.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px}
+button{font:inherit;border:0}.cat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px;text-align:left;box-shadow:0 2px 8px #00000008;color:var(--ink);font-weight:700}.cat span{display:block;font-size:12px;color:var(--muted);font-weight:500;margin-top:4px}
+.card{display:none;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;margin:12px 0;box-shadow:0 5px 18px #0000000b}.card.active{display:block}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:1.2px;color:var(--gold);font-weight:800}.title{font-size:22px;font-weight:800;margin:6px 0 18px}
+.ar{direction:rtl;text-align:right;font-family:"Geeza Pro","Noto Naskh Arabic",serif;font-size:29px;line-height:1.9;margin:12px 0;color:#111}
+.trans{font-size:15px;line-height:1.6;color:#3f4b44;margin:12px 0}.meaning{font-size:14px;line-height:1.55;color:var(--muted);padding-top:12px;border-top:1px solid var(--line)}
+.note{background:#f4efe3;border-left:4px solid var(--gold);padding:12px 14px;border-radius:10px;font-size:13px;line-height:1.5;margin-top:14px}
+.source{font-size:11px;color:#8a918c;margin-top:12px}
+.back{background:transparent;color:var(--green);font-weight:800;padding:7px 0;margin-bottom:4px}
+.footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.5;padding:20px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>Umrah Duas</h1><p>A simple pocket guide — just the essentials.</p></div></header>
+<main class="wrap">
+<div class="cats">
+<button class="cat" onclick="show('intention')">🤍 Intention<span>Ihram & Talbiyah</span></button>
+<button class="cat" onclick="show('masjid')">🕌 Masjid al-Haram<span>Entering & leaving</span></button>
+<button class="cat" onclick="show('tawaf')">🕋 Tawaf<span>What to say</span></button>
+<button class="cat" onclick="show('safa')">⛰️ Safa & Marwa<span>Sa'i</span></button>
+<button class="cat" onclick="show('general')">🤲 General Duas<span>Any time</span></button>
+<button class="cat" onclick="show('finish')">✂️ Completing Umrah<span>Finish</span></button>
+</div>
+
+<section id="intention" class="card">
+<button class="back" onclick="home()">← All categories</button><div class="kicker">Intention</div><div class="title">Entering Umrah</div>
+<div class="ar">لَبَّيْكَ اللَّهُمَّ عُمْرَةً</div>
+<div class="trans"><b>Labbayka Allahumma ‘Umrah.</b><br>Here I am, O Allah, for Umrah.</div>
+<div class="note">The intention is in the heart. When entering the rite, say the Talbiyah/intention phrase above.</div>
+<div class="source">Saudi Ministry of Hajj & Umrah Umrah Guide.</div>
+</section>
+
+<section id="masjid" class="card">
+<button class="back" onclick="home()">← All categories</button><div class="kicker">Masjid al-Haram</div><div class="title">Entering the Masjid</div>
+<div class="ar">اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ</div>
+<div class="trans"><b>Allahumma iftah li abwaba rahmatik.</b><br>O Allah, open for me the gates of Your mercy.</div>
+<div class="title" style="font-size:18px;margin-top:28px">Leaving the Masjid</div>
+<div class="ar">اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ</div>
+<div class="trans"><b>Allahumma inni as’aluka min fadlik.</b><br>O Allah, I ask You from Your bounty.</div>
+</section>
+
+<section id="tawaf" class="card">
+<button class="back" onclick="home()">← All categories</button><div class="kicker">Tawaf</div><div class="title">At the Black Stone</div>
+<div class="ar">اللَّهُ أَكْبَرُ</div>
+<div class="trans"><b>Allahu akbar.</b><br>Allah is the Greatest.</div>
+<div class="title" style="font-size:18px;margin-top:28px">Between the Yemeni Corner & Black Stone</div>
+<div class="ar">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</div>
+<div class="trans"><b>Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina ‘adhaban-nar.</b><br>Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.</div>
+<div class="note"><b>Important:</b> There is no authentic specific dua for each of the seven circuits. During the rest of Tawaf, make any sincere dua, dhikr, or recite Qur'an.</div>
+<div class="source">Based on the Sunnah guidance cited by Islam Q&A; see also the Saudi Ministry guide.</div>
+</section>
+
+<section id="safa" class="card">
+<button class="back" onclick="home()">← All categories</button><div class="kicker">Safa & Marwa</div><div class="title">At Safa — first time</div>
+<div class="ar">إِنَّ الصَّفَا وَالْمَرْوَةَ مِنْ شَعَائِرِ اللَّهِ</div>
+<div class="trans"><b>Innas-Safa wal-Marwata min sha'a'irillah.</b><br>Indeed, Safa and Marwa are among the symbols of Allah.</div>
+<div class="note">Then say: <b>Abda’u bima bada’allahu bih</b> — “I begin with what Allah began with.”</div>
+<div class="title" style="font-size:18px;margin-top:28px">At Safa & Marwa</div>
+<div class="ar">لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ<br><br>لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ، أَنْجَزَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الْأَحْزَابَ وَحْدَهُ</div>
+<div class="trans"><b>La ilaha illallahu wahdahu la sharika lah, lahul-mulku wa lahul-hamd, wa huwa ‘ala kulli shay’in qadir. La ilaha illallahu wahdah, anjaza wa’dah, wa nasara ‘abdah, wa hazamal-ahzaba wahdah.</b><br><br>There is no god but Allah alone, without partner. His is the dominion and His is the praise, and He is over all things capable. There is no god but Allah alone; He fulfilled His promise, helped His servant, and defeated the confederates alone.</div>
+<div class="note">At Safa and Marwa, say this dhikr, then make your own dua. Repeat the dhikr and dua three times. The verse is recited when first approaching Safa, not repeatedly at every lap.</div>
+</section>
+
+<section id="general" class="card">
+<button class="back" onclick="home()">← All categories</button><div class="kicker">General</div><div class="title">A simple dua you can make anywhere</div>
+<div class="ar">رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنْتَ السَّمِيعُ الْعَلِيمُ</div>
+<div class="trans"><b>Rabbana taqabbal minna innaka antas-Sami‘ul-‘Alim.</b><br>Our Lord, accept from us; indeed, You are the All-Hearing, the All-Knowing.</div>
+<div class="meaning">You can also make personal dua in your own words throughout Tawaf and Sa'i. There is no requirement to use a special dua for every lap.</div>
+</section>
+
+<section id="finish" class="card">
+<button class="back" onclick="home()">← All categories</button><div class="kicker">Completing Umrah</div><div class="title">After Sa'i</div>
+<div class="meaning">Complete Umrah by shortening or shaving the hair. There is no particular authentic dua that must be recited here. Ask Allah to accept your Umrah and make your own sincere dua.</div>
+<div class="ar">رَبَّنَا تَقَبَّلْ مِنَّا</div>
+<div class="trans"><b>Rabbana taqabbal minna.</b><br>Our Lord, accept from us.</div>
+</section>
+
+<div class="footer">Made as a simple personal reference. Religious wording has been kept to established supplications rather than assigning invented duas to each lap.</div>
+</main>
+<script>
+function show(id){document.querySelectorAll('.card').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
+function home(){document.querySelectorAll('.card').forEach(x=>x.classList.remove('active'));window.scrollTo({top:0,behavior:'smooth'})}
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js"));
+}
+</script>
+</body>
+</html>

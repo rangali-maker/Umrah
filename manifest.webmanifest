@@ -1,0 +1,9 @@
+{
+  "name": "Umrah Duas",
+  "short_name": "Umrah Duas",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#faf8f2",
+  "theme_color": "#0f5132",
+  "description": "A simple pocket guide for essential Umrah duas."
+}
