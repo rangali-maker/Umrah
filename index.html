@@ -26,56 +26,50 @@ button{font:inherit;border:0}.cat{background:var(--card);border:1px solid var(--
 <header><div class="wrap"><h1>Umrah Duas</h1><p>A simple pocket guide — just the essentials.</p></div></header>
 <main class="wrap">
 <div class="cats">
-<button class="cat" onclick="show('intention')">🤍 Intention<span>Ihram & Talbiyah</span></button>
+<button class="cat" onclick="show('intention')">🤍 Ihram & Talbiyah<span>Before Umrah</span></button>
 <button class="cat" onclick="show('masjid')">🕌 Masjid al-Haram<span>Entering & leaving</span></button>
-<button class="cat" onclick="show('tawaf')">🕋 Tawaf<span>What to say</span></button>
-<button class="cat" onclick="show('safa')">⛰️ Safa & Marwa<span>Sa'i</span></button>
+<button class="cat" onclick="show('tawaf')">🕋 Tawaf<span>Start, Tawaf & Maqam Ibrahim</span></button>
+<button class="cat" onclick="show('safa')">⛰️ Safa & Marwa<span>Sa‘i</span></button>
 <button class="cat" onclick="show('general')">🤲 General Duas<span>Any time</span></button>
 <button class="cat" onclick="show('finish')">✂️ Completing Umrah<span>Finish</span></button>
 </div>
 
 <section id="intention" class="card">
-<button class="back" onclick="home()">← All categories</button><div class="kicker">Intention</div><div class="title">Entering Umrah</div>
-<div class="ar">لَبَّيْكَ اللَّهُمَّ عُمْرَةً</div>
-<div class="trans"><b>Labbayka Allahumma ‘Umrah.</b><br>Here I am, O Allah, for Umrah.</div>
-<div class="note">The intention is in the heart. When entering the rite, say the Talbiyah/intention phrase above.</div>
-<div class="source">Saudi Ministry of Hajj & Umrah Umrah Guide.</div>
+<button class="back" onclick="home()">← All categories</button><div class="kicker">Ihram & Talbiyah</div><div class="title">Before Umrah</div>
+<div class="dua"><div class="title">For Umrah</div><div class="ar">لَبَّيْكَ عُمْرَةً</div><div class="trans"><b>Labbayka ‘Umrah.</b><br>Here I am, O Allah, for Umrah.</div></div>
+<div class="dua"><div class="title">For Hajj</div><div class="ar">لَبَّيْكَ حَجًّا</div><div class="trans"><b>Labbayka Hajjan.</b><br>Here I am, O Allah, for Hajj.</div></div>
+<div class="dua"><div class="title">For Hajj and Umrah</div><div class="ar">لَبَّيْكَ عُمْرَةً وَحَجًّا</div><div class="trans"><b>Labbayka ‘Umratan wa Hajjan.</b><br>Here I am, O Allah, for Umrah and Hajj.</div></div>
+<div class="title" style="font-size:18px;margin-top:24px">The Talbiyah</div>
+<div class="ar">لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ<br>لَبَّيْكَ لَا شَرِيكَ لَكَ لَبَّيْكَ<br>إِنَّ الْحَمْدَ وَالنِّعْمَةَ لَكَ وَالْمُلْكَ<br>لَا شَرِيكَ لَكَ</div>
+<div class="trans"><b>Labbayk Allahumma labbayk. Labbayka la sharika laka labbayk. Innal-hamda wan-ni‘mata laka wal-mulk. La sharika lak.</b><br>Here I am, O Allah, here I am. Here I am, You have no partner, here I am. Surely all praise, blessing and dominion are Yours. You have no partner.</div>
+<div class="note">These are the phrases shown in your book. The intention itself is in the heart.</div>
 </section>
 
 <section id="masjid" class="card">
 <button class="back" onclick="home()">← All categories</button><div class="kicker">Masjid al-Haram</div><div class="title">Entering the Masjid</div>
-<div class="ar">اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ</div>
-<div class="trans"><b>Allahumma iftah li abwaba rahmatik.</b><br>O Allah, open for me the gates of Your mercy.</div>
+<div class="ar">أَعُوذُ بِاللَّهِ الْعَظِيمِ وَبِوَجْهِهِ الْكَرِيمِ وَسُلْطَانِهِ الْقَدِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ<br>بِسْمِ اللَّهِ، وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ<br>اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ</div>
+<div class="trans"><b>A‘udhu billahil-‘Azimi wa bi-wajhihil-karimi wa sultānihil-qadimi minash-shaytanir-rajim.<br>Bismillah, was-salatu was-salamu ‘ala Rasulillah.<br>Allahumma iftah li abwaba rahmatik.</b><br>I seek refuge in Allah the Almighty, by His Noble Countenance and His ancient authority, from the accursed Satan. In the name of Allah, and peace and blessings be upon the Messenger of Allah. O Allah, open for me the gates of Your mercy.</div>
 <div class="title" style="font-size:18px;margin-top:28px">Leaving the Masjid</div>
-<div class="ar">اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ</div>
-<div class="trans"><b>Allahumma inni as’aluka min fadlik.</b><br>O Allah, I ask You from Your bounty.</div>
+<div class="ar">بِسْمِ اللَّهِ، وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ<br>اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ<br>اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيمِ</div>
+<div class="trans"><b>Bismillah, was-salatu was-salamu ‘ala Rasulillah.<br>Allahumma inni as’aluka min fadlik.<br>Allahumma ‘simni minash-shaytanir-rajim.</b><br>In the name of Allah, and peace and blessings be upon the Messenger of Allah. O Allah, I ask You from Your bounty. O Allah, protect me from the accursed Satan.</div>
+<div class="note">This section now follows the wording shown in your book.</div>
 </section>
 
 <section id="tawaf" class="card">
-<button class="back" onclick="home()">← All categories</button><div class="kicker">Tawaf</div><div class="title">1. Begin each circuit — at the Black Stone</div>
-<div class="ar">اللَّهُ أَكْبَرُ</div>
-<div class="trans"><b>Allahu akbar.</b><br>Allah is the Greatest.</div>
-<div class="note">Begin Tawaf at the Black Stone and complete seven circuits, keeping the Ka'bah on your left. Each circuit starts and ends at the Black Stone.</div>
-<div class="title" style="font-size:18px;margin-top:28px">2. Near the end of each circuit — between the Yemeni Corner & Black Stone</div>
-<div class="ar">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</div>
-<div class="trans"><b>Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina ‘adhaban-nar.</b><br>Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.</div>
-<div class="note"><b>Important:</b> There is no authentic specific dua for each of the seven circuits. During the rest of Tawaf, make any sincere dua, dhikr, or recite Qur'an.</div>
-<div class="title" style="font-size:18px;margin-top:28px">3. After completing Tawaf — at Maqam Ibrahim</div>
-<div class="ar">وَاتَّخِذُوا مِنْ مَقَامِ إِبْرَاهِيمَ مُصَلًّى</div>
-<div class="trans"><b>Wattakhidhu min maqami Ibrahima musalla.</b><br>And take the standing-place of Abraham as a place of prayer.</div>
-<div class="note">After completing Tawaf, pray two rak'ahs, with Maqam Ibrahim between you and the Ka'bah when practical. This Qur'anic verse is associated with that prayer.</div>
-<div class="source">The ritual sequence follows the Saudi Ministry of Hajj and Umrah guide: Tawaf, then two rak'ahs behind Maqam Ibrahim, then Sa'i. citeturn0search24</div>
+<button class="back" onclick="home()">← All categories</button><div class="kicker">Tawaf</div><div class="title">During Tawaf</div>
+<div class="dua"><div class="title">At the start</div><div class="ar">بِسْمِ اللَّهِ اللَّهُ أَكْبَرُ</div><div class="trans"><b>Bismillahi Allahu Akbar.</b><br>In the name of Allah. Allah is the Greatest.</div></div>
+<div class="dua"><div class="title">Between the Yemeni Corner & Black Stone</div><div class="ar">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً<br>وَفِي الْآخِرَةِ حَسَنَةً<br>وَقِنَا عَذَابَ النَّارِ</div><div class="trans"><b>Rabbana atina fid-dunya hasanatan, wa fil-akhirati hasanatan, wa qina ‘adhaban-nar.</b><br>Our Lord, give us good in this world and good in the Hereafter, and protect us from the punishment of the Fire.</div></div>
+<div class="dua"><div class="title">At the Black Stone</div><div class="ar">اللَّهُ أَكْبَرُ</div><div class="trans"><b>Allahu Akbar.</b><br>Allah is the Greatest.</div></div>
+<div class="dua"><div class="title">After Tawaf — Maqam Ibrahim</div><div class="ar">وَاتَّخِذُوا مِنْ مَقَامِ إِبْرَاهِيمَ مُصَلًّى</div><div class="trans"><b>Wattakhidhu min maqami Ibrahima musalla.</b><br>And take the standing-place of Abraham as a place of prayer.</div></div>
+<div class="note">Your book places these together as the Tawaf duas. I have kept the book's wording and simple journey order rather than adding extra circuit-by-circuit duas.</div>
 </section>
 
 <section id="safa" class="card">
-<button class="back" onclick="home()">← All categories</button><div class="kicker">Safa & Marwa</div><div class="title">Upon approaching Safa — first time</div>
-<div class="ar">إِنَّ الصَّفَا وَالْمَرْوَةَ مِنْ شَعَائِرِ اللَّهِ فَمَنْ حَجَّ الْبَيْتَ أَوِ اعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَنْ يَطَّوَّفَ بِهِمَا وَمَنْ تَطَوَّعَ خَيْرًا فَإِنَّ اللَّهَ شَاكِرٌ عَلِيمٌ</div>
-<div class="trans"><b>Innas-Safa wal-Marwata min sha'a'irillah. Faman hajj-al-bayta awi'tamara fala junaha 'alayhi an yattawwafa bihima. Wa man tatawwa'a khayran fa-innallaha shakirun 'alim.</b><br>Indeed, Safa and Marwa are among the symbols of Allah. So whoever performs Hajj or Umrah, there is no blame upon him for walking between them. And whoever does good voluntarily — then indeed Allah is Appreciative, All-Knowing.</div>
-<div class="note">Then say: <b>Abda’u bima bada’allahu bih</b> — “I begin with what Allah began with.” The verse and this phrase are for the first approach to Safa.</div>
-<div class="title" style="font-size:18px;margin-top:28px">Then at Safa — and again at Marwa</div>
-<div class="ar">لَا إِلَهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ<br><br>لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ<br><br>لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ، أَنْجَزَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الْأَحْزَابَ وَحْدَهُ</div>
-<div class="trans"><b>La ilaha illallahu, wallahu akbar.</b><br><br><b>La ilaha illallahu wahdahu la sharika lah, lahul-mulku wa lahul-hamd, wa huwa ‘ala kulli shay’in qadir. La ilaha illallahu wahdah, anjaza wa’dah, wa nasara ‘abdah, wa hazamal-ahzaba wahdah.</b><br><br>There is no god but Allah, and Allah is the Greatest. There is no god but Allah alone, without partner. His is the dominion and His is the praise, and He is over all things capable. There is no god but Allah alone; He fulfilled His promise, helped His servant, and defeated the confederates alone.</div>
-<div class="note">At Safa, say the dhikr above, then make your own sincere dua. Repeat the dhikr and dua three times. At Marwa, do the same. Sa'i begins at Safa and ends at Marwa after seven laps.</div>
+<button class="back" onclick="home()">← All categories</button><div class="kicker">Safa & Marwa</div><div class="title">Sa‘i</div>
+<div class="dua"><div class="title">When you first reach Safa</div><div class="ar">إِنَّ الصَّفَا وَالْمَرْوَةَ مِنْ شَعَائِرِ اللَّهِ<br>فَمَنْ حَجَّ الْبَيْتَ أَوِ اعْتَمَرَ<br>فَلَا جُنَاحَ عَلَيْهِ أَنْ يَطَّوَّفَ بِهِمَا<br>وَمَنْ تَطَوَّعَ خَيْرًا فَإِنَّ اللَّهَ شَاكِرٌ عَلِيمٌ</div><div class="trans"><b>Innas-Safa wal-Marwata min sha‘a’irillah. Faman hajj-al-bayta awi‘tamara fala junaha ‘alayhi an yattawwafa bihima. Wa man tatawwa‘a khayran fa-innallaha shakirun ‘alim.</b><br>Indeed, Safa and Marwa are among the symbols of Allah. So whoever performs Hajj or Umrah, there is no blame upon him for walking between them. And whoever does good voluntarily, then Allah is Appreciative, All-Knowing.</div></div>
+<div class="dua"><div class="title">Then say</div><div class="ar">أَبْدَأُ بِمَا بَدَأَ اللَّهُ بِهِ</div><div class="trans"><b>Abda’u bima bada’allahu bih.</b><br>I begin with what Allah began with.</div></div>
+<div class="dua"><div class="title">At Safa & Marwa</div><div class="ar">اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ<br>لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ،<br>لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ، أَنْجَزَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الْأَحْزَابَ وَحْدَهُ</div><div class="trans"><b>Allahu Akbar, Allahu Akbar, Allahu Akbar. La ilaha illallahu wahdahu la sharika lah, lahul-mulku wa lahul-hamd wa huwa ‘ala kulli shay’in qadir. La ilaha illallahu wahdah, anjaza wa‘dah, wa nasara ‘abdah, wa hazamal-ahzaba wahdah.</b><br>Allah is the Greatest. There is no god but Allah alone, without partner; His is the dominion and His is the praise, and He is over all things capable. There is no god but Allah alone; He fulfilled His promise, helped His servant, and defeated the confederates alone.</div></div>
+<div class="note">Use the dhikr at Safa and Marwa as shown in the book, with your personal dua alongside it.</div>
 </section>
 
 <section id="general" class="card">
@@ -111,7 +105,7 @@ button{font:inherit;border:0}.cat{background:var(--card);border:1px solid var(--
 <div class="trans"><b>Rabbana taqabbal minna.</b><br>Our Lord, accept from us.</div>
 </section>
 
-<div class="footer">Made as a simple personal reference. General-dua cards are based on the uploaded images; references are retained where shown. Religious wording has not been assigned to particular laps.</div>
+<div class="footer">Made as a simple personal reference. General-dua cards are based on the uploaded images; references are retained where shown. The main Umrah wording follows the pages you provided; General Duas remain from your earlier uploaded cards.</div>
 </main>
 <script>
 function show(id){document.querySelectorAll('.card').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
