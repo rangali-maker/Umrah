@@ -6,24 +6,22 @@
 <meta name="theme-color" content="#0f5132">
 <title>Umrah Duas</title>
 <style>
-:root{--green:#0f5132;--gold:#c8a45d;--cream:#faf8f2;--ink:#18221d;--muted:#68736d;--card:#fff;--line:#e7e2d7}
-*{box-sizing:border-box} body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}
-header{background:linear-gradient(145deg,#0b4229,#146b43);color:#fff;padding:52px 20px 28px;border-radius:0 0 28px 28px}
-h1{margin:0;font-size:34px;letter-spacing:-1px} header p{margin:7px 0 0;opacity:.82}
-.wrap{max-width:720px;margin:auto;padding:18px 16px 40px}.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px}
-button{font:inherit;border:0}.cat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:15px;text-align:left;box-shadow:0 2px 8px #00000008;color:var(--ink);font-weight:700}.cat span{display:block;font-size:12px;color:var(--muted);font-weight:500;margin-top:4px}
-.dua{padding:16px 0;border-top:1px solid var(--line)}.dua:first-of-type{border-top:0}.dua .title{font-size:19px;margin:0 0 10px}.card{display:none;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;margin:12px 0;box-shadow:0 5px 18px #0000000b}.card.active{display:block}
-.kicker{font-size:12px;text-transform:uppercase;letter-spacing:1.2px;color:var(--gold);font-weight:800}.title{font-size:22px;font-weight:800;margin:6px 0 18px}
-.ar{direction:rtl;text-align:right;font-family:"Geeza Pro","Noto Naskh Arabic",serif;font-size:29px;line-height:1.9;margin:12px 0;color:#111}
-.trans{font-size:15px;line-height:1.6;color:#3f4b44;margin:12px 0}.meaning{font-size:14px;line-height:1.55;color:var(--muted);padding-top:12px;border-top:1px solid var(--line)}
-.note{background:#f4efe3;border-left:4px solid var(--gold);padding:12px 14px;border-radius:10px;font-size:13px;line-height:1.5;margin-top:14px}
-.source{font-size:11px;color:#8a918c;margin-top:12px}
-.back{background:transparent;color:var(--green);font-weight:800;padding:7px 0;margin-bottom:4px}
-.footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.5;padding:20px}
+:root{--bg:#f8f3e8;--paper:#fffdf8;--ink:#26342d;--muted:#778078;--green:#2f6b53;--sage:#dfe9df;--gold:#c8a66a;--line:#e9e1d2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif}
+header{background:linear-gradient(155deg,#edf2e8,#f8f3e8 72%);padding:46px 20px 26px;border-bottom:1px solid #e5dfd2;text-align:center}
+.hero-icon{width:82px;height:62px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;background:#2f6b53;border-radius:14px 14px 18px 18px;color:#e8d5a8;font-size:30px;box-shadow:0 8px 22px #2f6b5318}
+h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:34px;letter-spacing:-.7px;color:#294336}header p{margin:8px auto 0;max-width:330px;color:#748077;font-size:14px;line-height:1.45}
+.wrap{max-width:720px;margin:auto;padding:20px 16px 36px}.cats{display:grid;grid-template-columns:1fr;gap:11px;margin-bottom:20px}
+button{font:inherit;border:0}.cat{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:16px 46px 15px 18px;text-align:left;box-shadow:0 4px 14px #5a614b0a;color:var(--ink);font-weight:750;font-size:16px;min-height:68px}.cat span{display:block;font-size:12px;color:var(--muted);font-weight:500;margin-top:4px}.cat:after{content:'›';position:absolute;right:18px;top:50%;transform:translateY(-53%);font-size:26px;color:#9a9f98;font-weight:300}
+.cat:nth-child(1){background:#f5f0e4}.cat:nth-child(2){background:#eef3ec}.cat:nth-child(3){background:#f3eee4}.cat:nth-child(4){background:#edf3ef}.cat:nth-child(5){background:#f6f0e8}.cat:nth-child(6){background:#f0f1eb}
+.card{display:none;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:22px;margin:4px 0;box-shadow:0 6px 20px #5a614b0c}.card.active{display:block}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--green);font-weight:800}.title{font-size:22px;font-weight:800;margin:6px 0 18px}.dua{padding:17px 0;border-top:1px solid var(--line)}.dua:first-of-type{border-top:0}.dua .title{font-size:18px;margin:0 0 10px}
+.ar{direction:rtl;text-align:right;font-family:"Geeza Pro","Noto Naskh Arabic",serif;font-size:29px;line-height:1.9;margin:12px 0;color:#172019}.trans{font-size:15px;line-height:1.6;color:#46534b;margin:12px 0}.meaning{font-size:14px;line-height:1.55;color:var(--muted);padding-top:12px;border-top:1px solid var(--line)}.note{background:#f4efe2;border-left:4px solid var(--gold);padding:12px 14px;border-radius:10px;font-size:13px;line-height:1.5;margin-top:14px}.source{font-size:11px;color:#8a918c;margin-top:12px}.back{background:transparent;color:var(--green);font-weight:800;padding:4px 0;margin-bottom:7px}.footer{text-align:center;color:var(--muted);font-size:12px;line-height:1.5;padding:20px 4px 6px}
+.end{margin:4px 0 22px;text-align:center;color:#68746d}.end .ar{font-size:23px;text-align:center;margin:0 0 4px}.end div:last-child{font-size:12px}
+@media(min-width:560px){.cats{grid-template-columns:1fr 1fr}.cat{min-height:82px}}
 </style>
 </head>
 <body>
-<header><div class="wrap"><h1>Umrah Duas</h1><p>A simple pocket guide — just the essentials.</p></div></header>
+<header><div class="hero-icon">🕋</div><h1>UMRAH DUAS</h1><p>May your journey be filled with ease, barakah and acceptance.</p></header>
 <main class="wrap">
 <div class="cats">
 <button class="cat" onclick="show('intention')">🤍 Ihram & Talbiyah<span>Before Umrah</span></button>
@@ -105,6 +103,7 @@ button{font:inherit;border:0}.cat{background:var(--card);border:1px solid var(--
 <div class="trans"><b>Rabbana taqabbal minna.</b><br>Our Lord, accept from us.</div>
 </section>
 
+<div class="end"><div class="ar">تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ</div><div>May Allah accept from us and from you.</div></div>
 <div class="footer">Made as a simple personal reference. General-dua cards are based on the uploaded images; references are retained where shown. The main Umrah wording follows the pages you provided; General Duas remain from your earlier uploaded cards.</div>
 </main>
 <script>
